@@ -69,10 +69,10 @@
 <script lang="ts">
 import { defineComponent, computed, ref, watch } from "vue"
 
-import hyTable from "@/base-ui/table"
-
-import { useStore } from "@/store"
 import { usePermission } from "@/hooks/use-permission"
+import { useStore } from "@/store"
+
+import hyTable from "@/base-ui/table"
 
 export default defineComponent({
   props: {
