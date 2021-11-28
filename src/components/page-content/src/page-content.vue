@@ -131,7 +131,7 @@ export default defineComponent({
       store.getters["system/pageListCount"](props.pageName)
     )
 
-    const selectionChange = (value: any) => {
+    const selectionChange = () => {
       //
     }
 
