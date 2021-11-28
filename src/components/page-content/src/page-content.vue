@@ -101,7 +101,6 @@ export default defineComponent({
     const isUpdate = usePermission(props.pageName, "update")
     const isDelete = usePermission(props.pageName, "delete")
     const isQuery = usePermission(props.pageName, "query")
-    console.log(isQuery)
 
     // 1.双向绑定pageInfo
     const pageInfo = ref({ currentPage: 1, pageSize: 10 })
@@ -133,7 +132,7 @@ export default defineComponent({
     )
 
     const selectionChange = (value: any) => {
-      console.log("selectionChange", value)
+      //
     }
 
     // 4.获取其他的动态插槽名称

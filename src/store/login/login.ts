@@ -78,7 +78,7 @@ const loginModule: Module<ILoginState, IRootState> = {
       router.push("/main")
     },
     phoneLoginAction() {
-      console.log("phoneLoginAction")
+      //
     },
     loadLocalLogin({ commit, dispatch }) {
       const token = localCache.getCache("token")
