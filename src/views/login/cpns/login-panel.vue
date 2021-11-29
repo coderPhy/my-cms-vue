@@ -53,7 +53,7 @@ export default defineComponent({
       if (currentTab.value === "account") {
         accountRef.value?.loginAction(isKeppPassword.value)
       } else {
-        console.log("手机登录没有实现")
+        //
       }
     }
 

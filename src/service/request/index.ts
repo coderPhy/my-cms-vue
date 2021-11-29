@@ -45,15 +45,9 @@ class HYRequest {
     )
     this.instance.interceptors.response.use(
       (res) => {
-        // 将loading移除
         if (this.showLoading) {
           this.loading?.close()
         }
-        // const data = res.data
-        // if (data.returnCode === "-1001") {
-        // } else {
-        //   return data
-        // }
         return res.data
       },
       (err) => {

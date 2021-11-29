@@ -68,7 +68,6 @@ export default defineComponent({
     const menu = pathMapToMeun(userMunes.value, route.path)
     const currentMenu = ref(menu.id + "")
 
-    // event handle
     const handleMenuItemClick = (item: any) => {
       router.push({
         path: item.url ?? "not-found"
