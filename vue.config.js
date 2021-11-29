@@ -5,17 +5,15 @@ module.exports = {
   publicPath: "./",
   devServer: {
     proxy: {
-      "^/": {
-        // target: "http://127.0.0.1:9000",
+      "^/api": {
         target: "http://47.107.55.171:9000",
         pathRewrite: {
-          "^/": "/"
+          "^/api": ""
         },
         changeOrigin: true
       }
     }
   },
-
   // configureWebpack: {
   //   resolve: {
   //     alias: {
